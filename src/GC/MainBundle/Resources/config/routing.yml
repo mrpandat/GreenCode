@@ -1,0 +1,18 @@
+gc_main_homepage:
+    path:     /{_theme}
+    defaults: { _controller: GCMainBundle:Default:index, _theme: bright }
+    requirements:
+        _theme: bright|dark
+
+gc_main_search:
+    path:     /search/{_theme}
+    defaults: { _controller: GCMainBundle:Default:search, _theme: bright }
+    requirements:
+        _theme: bright|dark
+
+gc_main_detail:
+    path:     /dentist/{dentist_id}/{_theme}
+    defaults: { _controller: GCMainBundle:Default:detail, _theme: bright }
+    requirements:
+        dentist_id: '\d+'
+        _theme: bright|dark

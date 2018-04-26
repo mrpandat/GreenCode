@@ -1,0 +1,3 @@
+gc_main:
+    resource: "@GCMainBundle/Resources/config/routing.yml"
+    prefix:   /
